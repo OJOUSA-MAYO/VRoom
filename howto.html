@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>VRoomの紹介</title>
+  <link href="./bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+
+  <div class="header fixed-top">
+    <div class="float-start header_title"><a class="link-light" style="text-decoration: none;"
+        href="./index.html">VRoom<span class="header_subtitle">-簡単おうち3Dアプリ-</span></a></div>
+    <div class="float-end">
+      <ul class="nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#1">VRoomとは？</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#2">Roomの紹介</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html#3">始め方</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./howto.html">使い方</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary" href="https://ojousamaya.booth.pm/items/3949561" target="_blank"
+            rel="noopener noreferrer">Download
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin:0 0 5px 7px;"
+              fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+              <path fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+        <div class="offcanvas-lg offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu"
+          aria-labelledby="sidebarMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+            <ul class="nav flex-column">
+
+              <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                <span>最低限の必要な設定・使い方</span>
+              </h6>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#install">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  インストール
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#first">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  最初の設定 (VRMモデルを動かす)
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#basic">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  基本の操作
+                </a>
+              </li>
+
+              <hr class="my-3">
+              <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                <span>使いこなす</span>
+              </h6>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  アバター・マイクの位置調整
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#camera">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  カメラ・画面エフェクト
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#light">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  ライト・パーティクル・空
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#pose">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  ポーズ・モーション機能
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#monitor">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  モニター表示機能
+                </a>
+              </li>
+
+              <hr class="my-3">
+              <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+                <span>さらに使いこなす</span>
+              </h6>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#spout">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  OBSにUIを映さないで配信しよう
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#customize">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  マイルームのカスタマイズ機能
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#collabo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  コラボ機能を使ってみよう
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#tdpt_full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  TDPTでフルトラ配信してみよう
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                  </svg>
+                  mocopiでフルトラ配信してみよう
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="howto col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          style="margin-top: 60px;">
+          <h1 class="h2">使い方</h1>
+        </div>
+
+        <div id="install"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">インストール</h4>
+            <p class="card-text mb-6">-アプリのダウンロードから起動まで-</p>
+            <ol>
+              <li>VRoomアプリを右上の「Download」ボタンからBOOTHのページに飛びダウンロードします。</li>
+              <li>ダウンロードしたzipファイルを解凍します。</li>
+              <li>フォルダ内のVRoom.exeを起動します。</li>
+              <li>初回起動時は右図の①のような警告が出ますが、実行を押します。</li>
+              <li>同じく初回起動時は右図の②のような警告も出ますが、基本キャンセルで大丈夫です。（コラボ機能を使う場合やVRoomとトラッキングソフトが別PCの場合は通信を許可するにチェックを入れてください。）</li>
+              <li>以上でアプリが起動し、インストールは完了です。</li>
+            </ol>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/install.png" data-bs-toggle="modal" data-bs-target="#installModal"
+              class="btn d-block rounded mx-auto" width="500px" />
+            <!-- Modal -->
+            <div class="modal fade" id="installModal" tabindex="-1" aria-labelledby="installModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./images/install.png" width="100%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="first"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">最初の設定<span style="font-size: 1rem;">（VRMモデルを動かす）</span></h4>
+            <p class="card-text mb-6">-VRoomとトラッキングソフトを連携しVRMモデルを動かします-</p>
+            <ol>
+              <li>VRoomとお使いになるトラッキングソフト（例：VSeeFace等）に同じVRMモデルを読み込みます</li>
+              <li>初回はモーション送受信の設定が必要です。トラッキングソフト側のOSC/VMCプロトコル送信を有効にし、ポート番号を設定します（ポート番号の例：39539）</li>
+              <li>VRoom側もSettingメニューの「OSC/VMCプロトコル受信番号」に上記の送信側で設定したポート番号と同じ番号を入力します</li>
+              <li>詳しくは右の動画をご覧ください。</li>
+            </ol>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WqyKsL5DUWA?si=1Ex30fjyi0sqAFz3"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div id="basic"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">基本の操作</h4>
+            <p class="card-text mb-6">- ルームの移動や、カメラ・モデルの操作（以下はよく使うショートカット。基本操作は一つ上の動画も参照ください） -</p>
+            <div class="lead">◆メニューの表示</div>
+            <ul>
+              <li>【ESCキー】 ： メインメニューの表示</li>
+              <li>【スペースキー】 ： サブメニューの表示</li>
+              <li>【F1キー】 ： ショートカットメニューの表示</li>
+            </ul>
+            <div class="lead">◆ルーム・画面解像度の変更</div>
+            <ul>
+              <li>ルームの移動 ： メインメニューのRoomボタンから選択</li>
+              <li>画面解像度の変更 ： メインメニューのScreenSizeボタンから選択</li>
+            </ul>
+            <div class="lead">◆モデルの移動</div>
+            <ul>
+              <li>【Rキー】 ： 初期の位置へ移動</li>
+              <li>【W,A,S,Dキー】 ： 前後左右</li>
+              <li>【Q,Eキー】 ： 回転</li>
+              <li>【Z,Cキー】 ： 上下</li>
+            </ul>
+            <div class="lead">◆カメラの操作</div>
+            <ul>
+              <li>【Mキー】 ： ムービングカメラとマニュアルカメラの切替</li>
+              <li>【↑↓←→キー】 ： ムービングカメラ位置のオフセット</li>
+              <li>【マウスホイール】ズーム</li>
+              <li>【マウス右ドラッグ】回転（マニュアルカメラのみ）</li>
+              <li>【マウスホイールドラッグ】位置移動（マニュアルカメラのみ）</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/shortcut.png" data-bs-toggle="modal" data-bs-target="#shortcutlModal"
+              class="btn d-block rounded mx-auto" width="560px" />
+            <!-- Modal -->
+            <div class="modal fade" id="shortcutlModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./images/shortcut.png" width="100%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="avatar"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">お気に入りポジションの保存・アバター・マイクの位置</h4>
+            <p class="card-text mb-6"></p>
+            <div class="lead">◆お気に入りポジションの保存</div>
+            <ul>
+              <li>アバター、カメラ、マイク、モニターの位置を２ヵ所までセーブ・ロードできます。</li>
+            </ul>
+            <div class="lead">◆アバターの位置移動・ミラーモード設定</div>
+            <ul>
+              <li>アバターの位置を調整します。細かく調整したい場合は、移動速度を変更してください。</li>
+              <li>ミラーモードをONにすると、アバターの動きが左右反転します。フルトラ時などに使うと良いです。</li>
+              <li>ブレンドシェイプ機能でアバターのブレンドシェイプを変更できます。</li>
+            </ul>
+            <div class="lead">◆マイクの位置とサイズ変更</div>
+            <ul>
+              <li>マイクは現在3種類あるのでお好みのをお使いください。</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/avatar.png" class="d-block rounded mx-auto" width="430px" />
+          </div>
+        </div>
+
+        <div id="camera"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">カメラ・画面エフェクト</h4>
+            <p class="card-text mb-6"></p>
+            <div class="lead">◆カメラの変更</div>
+            <ul>
+              <li>ムービング・マニュアル・正面カメラに切替できます。お好みで切替速度を調整してください。</li>
+              <li>ムービングカメラの種類は現在5種類となります。またムービングカメラのみ上下左右に位置調整できるオフセットがあります。アバターの身長などに合わせてお使いください</li>
+              <li>カメラを頭に追従させる機能や位置を同期させる機能があるので、フルトラ時などに使うと良いかもしれません。</li>
+            </ul>
+            <div class="lead">◆画面エフェクトの変更</div>
+            <ul>
+              <li>画面エフェクトは現在4種類です。被写界深度をONにすると背景をぼかす事ができます。</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/camera.png" class="d-block rounded mx-auto" width="430px" />
+          </div>
+        </div>
+
+        <div id="light"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">ライト・パーティクル・空</h4>
+            <p class="card-text mb-6"></p>
+            <div class="lead">◆ライトの変更</div>
+            <ul>
+              <li>各種ライトのON・OFF、光量の調整ができます。光の当たり具合によってはアバターの影が可愛くない感じになる場合があるので、うまく調整しましょう。</li>
+            </ul>
+            <div class="lead">◆パーティクルの変更</div>
+            <ul>
+              <li>パーティクルは現在6種類あります。ライブの演出などに効果的です。</li>
+            </ul>
+            <div class="lead">◆空の変更</div>
+            <ul>
+              <li>部屋の外の空（sky）の種類を変更できます。部屋の外が見えないルームではここを変更しても何も変わりません。</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/light.png" class="d-block rounded mx-auto" width="430px" />
+          </div>
+        </div>
+
+        <div id="pose"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">ポーズ・モーション機能</h4>
+            <p class="card-text mb-6"></p>
+            <ul>
+              <li>顔以外の部分の、上半身、下半身にポーズやモーションをとらせることができます。</li>
+              <li>上半身はトラッキングを利用し、下半身は座らせたり、ポーズをとらせる事できます。</li>
+              <li>歌枠などのライブ時に、顔だけのトラッキングだと棒立ちな感じになってしまうので、モーションを使うと良い感じになります。</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/pose.png" class="d-block rounded mx-auto" width="430px" />
+          </div>
+        </div>
+
+        <div id="monitor"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">モニター表示機能</h4>
+            <p class="card-text mb-6"></p>
+            <div class="lead">◆動画再生モニター</div>
+            <ul>
+              <li>ローカルやWeb上の動画（windowsが再生できる形式：mp4等）を再生出来ます。Youtube等のストリーミング動画は再生できません。</li>
+            </ul>
+            <div class="lead">◆デスクトップモニター</div>
+            <ul>
+              <li>デスクトップ画面を表示できます。</li>
+            </ul>
+            <div class="lead">◆Windowモニター</div>
+            <ul>
+              <li>特定のウィンドウを指定して表示することができます。</li>
+            </ul>
+            <ul>
+              <li>TVがある部屋や、ライブステージでは、モニターを良い感じの位置に移動できる「TVモニターポジション」「ライブモニターポジション」ボタンがあります。</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/monitor.png" class="d-block rounded mx-auto" width="430px" />
+          </div>
+        </div>
+
+        <div id="spout"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">OBSにUIを映さないで配信しよう</h4>
+            <p class="card-text mb-6"></p>
+            <ul>
+              <li>OBSにSpout2と言うプラグインを導入すると、UIを映さないで配信する事ができます。<br />
+                ≫ <a href="https://github.com/Off-World-Live/obs-spout2-plugin/releases" target="_blank"
+                  rel="noopener noreferrer">Spout2プラグインはこちら</a></li>
+              <li>上記プラグインをOBSに導入し、VRoomのSpout2の設定をONにします。</li>
+              <li>OBSで表示するソースをSpout2 CaptureにするとUIを映さないで配信できます。詳しくは右の動画をご覧ください。</li>
+            </ul>
+            <img src="./images/spout.png" class="d-block rounded mx-auto" width="320px" /><br />
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_XKl6-BYN8M?si=95vYWMEVdZ9kSv9m"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div id="customize"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">マイルームのカスタマイズ機能</h4>
+            <p class="card-text mb-6"></p>
+            <ul>
+              <li>マイルームのカスタマイズ機能で部屋のカスタマイズが出来ます。詳しくは右の動画をご覧ください。</li>
+              <li>部屋のベースを設置し、その中に家具や小物を配置し自分のルームを作る事ができます。</li>
+              <li>配置できるオブジェクトはまだ少ないですが今後増えて行く予定です。</li>
+            </ul>
+            <img src="./images/Custom.png" data-bs-toggle="modal" data-bs-target="#customlModal"
+              class="btn d-block rounded mx-auto" width="320px" /><br />
+            <!-- Modal -->
+            <div class="modal fade" id="customlModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./images/Custom.png" width="100%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QtkTBb5yjyE?si=tveruBZmSBWZfxhO"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div id="collabo"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">コラボ機能を使ってみよう</h4>
+            <p class="card-text mb-6"></p>
+            <ul>
+              <li>同じネットワーク上であれば他の配信者とコラボができます。詳しくは右の動画をご覧ください。</li>
+              <li>VPNを使えば離れた配信者同士でコラボも可能ですが、セキュリティ面などにおいて自己責任・自己判断でご利用ください。</li>
+            </ul>
+            <img src="./images/collabo.png" class="d-block rounded mx-auto" width="320px" />
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qUDvor2fsSQ?si=wwQJN6MLGHhqMcwJ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div id="tdpt_full"
+          class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">TDPTでフルトラ配信してみよう</h4>
+            <p class="card-text mb-6">- TDPT（Three D Pose Tracker）を使ってフルトラ配信する方法です -</p>
+            <ul>
+              <li>Webカメラとトラッキングソフト（TDPTとVSeeFace）のみでフルトラ配信する方法です。詳しくは右の動画をご覧ください。</li>
+              <li>TDPTはDigitalStandard様のWebカメラだけでフルトラ出来るアプリです。TDPTのページは以下になります。<br />
+                ≫ <a href="https://digital-standard.booth.pm/items/3698596" target="_blank"
+                  rel="noopener noreferrer">TDPTはこちら</a>
+              </li>
+              <li>TDPT用のカメラには広角の物がオススメです。</li>
+            </ul>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nK-a5Lmama8?si=vbHqQWAIzhHBELSb"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+        <div id="" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">mocopiでフルトラ配信してみよう</h4>
+            <p class="card-text mb-6"></p>
+            <ul>
+              <li>ソニー株式会社様の、モーションキャプチャーデバイス「mocopi」と連携した配信方法の説明になります。<br />
+                ≫ <a href="https://www.sony.jp/mocopi/" target="_blank" rel="noopener noreferrer">mocopiの製品情報ページはこちら</a>
+              </li>
+            </ul>
+            <ul>
+              <li>文章での説明では分かりにくいので、右の「mocopiとPCの接続わくわくガイド」の画像をご参考ください。</li>
+              <ul>
+                <li>こちらのガイドは、corocoma様が制作された画像を、一部私の方で文言を修正させて頂いたものになります。</li>
+                <li>こちらのガイドの画像や文章の一部に、VMC公式の使い方ガイド（<a
+                    href="https://vmc.info/manual/mocopi%E3%81%AE%E3%81%A4%E3%81%8B%E3%81%84%E3%81%8B%E3%81%9F.html"
+                    target="_blank" rel="noopener noreferrer">mocopiのつかいかた</a>）を引用させて頂いております。</li>
+              </ul>
+            </ul>
+            <div class="alert alert-primary" role="alert" style="max-width:fit-content;">
+              <div class="lead">
+                <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.4rem; height: 1.4rem; color:blueviolet;"
+                  width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                覚えておきたい小技
+              </div>
+              <p>アバターが画面外に行って行方不明の時はバモキャの「現在位置を中心にする」を押す！</p>
+              <img src="./images/mocopi_tips.png" class="d-block rounded mx-auto" width="460px" />
+            </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/mocopi.png" data-bs-toggle="modal" data-bs-target="#mocopilModal"
+              class="btn d-block rounded mx-auto" width="500px" />
+            <!-- Modal -->
+            <div class="modal fade" id="mocopilModal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="./images/mocopi.png" width="100%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h4 class="mb-0">hogehoge</h4>
+            <p class="card-text mb-6">-fugafuga-</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./images/top_001.png" class="d-block rounded mx-auto" width="300px" />
+          </div>
+        </div> -->
+
+      </main>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="float-end">
+      © 御嬢沙 真夜：
+      <a href="https://twitter.com/ojousa_ma_yo" target="_blank" rel="noopener noreferrer">Twitter</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
